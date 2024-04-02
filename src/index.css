@@ -1,7 +1,4 @@
-@import url("../src/components/Profile/Profile.module.css");
-@import url("../src/components/FriendList/FriendList.module.css");
-@import url("../src/components/TransactionHistory/TransactionHistory.module.css");
-
+/* @import url("../src/components/Options/Options.module.css"); */
 body {
   padding: 30px 15px;
 }
