@@ -11,13 +11,13 @@ export default function App() {
   });
 
   function updateFeedback(feedbackType) {
-    setReviews({ ...reviews, feedbackType: reviews.feedbackType + 1 });
+    setReviews({ ...reviews, [feedbackType]: reviews[feedbackType] + 1 });
   }
 
   return (
     <>
       <Description />
-      <Options reviews={reviews} function={updateFeedback} />
+      <Options reviews={reviews} onUpdate={updateFeedback} />
       <Feedback reviews={reviews} />
     </>
   );
