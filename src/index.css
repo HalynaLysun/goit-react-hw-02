@@ -1,0 +1,14 @@
+@import url("../src/components/Profile/Profile.module.css");
+@import url("../src/components/FriendList/FriendList.module.css");
+@import url("../src/components/TransactionHistory/TransactionHistory.module.css");
+
+body {
+  padding: 30px 15px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
