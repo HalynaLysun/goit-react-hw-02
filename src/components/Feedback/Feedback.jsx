@@ -1,9 +1,9 @@
-export default function Feedback({ reviews: { good, neutral, bad } }) {
+export default function Feedback({ reviews: { good, neutral, bad }, total }) {
   return (
     <>
-      <p>Good: {good}</p>
-      <p>Neutral: {neutral}</p>
-      <p>Bad: {bad}</p>
+      {total > 0 && <p> Good: {good}</p>}
+      {total > 0 && <p>Neutral: {neutral}</p>}
+      {total > 0 && <p>Bad: {bad}</p>}
     </>
   );
 }
