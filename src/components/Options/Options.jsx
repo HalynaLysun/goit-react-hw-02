@@ -29,7 +29,11 @@ export default function Options({ reviews, onUpdate, total, onReset }) {
       >
         {keys[2]}
       </button>
-      {total > 0 && <button onClick={onReset}>Reset</button>}
+      {total > 0 && (
+        <button onClick={onReset} className={css.button}>
+          Reset
+        </button>
+      )}
     </>
   );
 }

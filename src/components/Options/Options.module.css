@@ -1,3 +1,10 @@
 .button {
   text-transform: capitalize;
+  margin-right: 10px;
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+  background-color: blueviolet;
+  color: azure;
+  font-size: 20px;
 }
