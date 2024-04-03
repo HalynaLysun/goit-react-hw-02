@@ -17,6 +17,14 @@ export default function App() {
     setReviews({ ...reviews, [feedbackType]: reviews[feedbackType] + 1 });
   }
 
+  function onReset() {
+    setReviews({
+      good: 0,
+      neutral: 0,
+      bad: 0,
+    });
+  }
+
   return (
     <>
       <Description />
@@ -24,6 +32,7 @@ export default function App() {
         reviews={reviews}
         onUpdate={updateFeedback}
         total={totalFeedback}
+        onReset={onReset}
       />
       <Feedback reviews={reviews} total={totalFeedback} />
       <Notification total={totalFeedback} />

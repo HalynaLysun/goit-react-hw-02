@@ -1,16 +1,7 @@
 import css from "../Options/Options.module.css";
 
-export default function Options({ reviews, onUpdate, total }) {
+export default function Options({ reviews, onUpdate, total, onReset }) {
   const keys = Object.keys(reviews);
-  console.log(total);
-  console.log(keys[0]);
-  function onReset() {
-    console.log(reviews.good);
-
-    {
-      total > 0 && reviews.good === 0;
-    }
-  }
 
   return (
     <>
