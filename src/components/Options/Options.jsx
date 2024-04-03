@@ -1,12 +1,12 @@
 import css from "../Options/Options.module.css";
 
-export default function Options({ reviews, updateFeedback }) {
+export default function Options({ reviews, onUpdate }) {
   const keys = Object.keys(reviews);
   return (
     <>
       <button
         onClick={() => {
-          updateFeedback(keys[0]);
+          onUpdate(keys[0]);
         }}
         className={css.button}
       >
@@ -14,7 +14,7 @@ export default function Options({ reviews, updateFeedback }) {
       </button>
       <button
         onClick={() => {
-          updateFeedback(keys[1]);
+          onUpdate(keys[1]);
         }}
         className={css.button}
       >
@@ -22,7 +22,7 @@ export default function Options({ reviews, updateFeedback }) {
       </button>
       <button
         onClick={() => {
-          updateFeedback(keys[2]);
+          onUpdate(keys[2]);
         }}
         className={css.button}
       >
