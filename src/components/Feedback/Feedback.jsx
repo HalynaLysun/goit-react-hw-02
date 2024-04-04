@@ -7,11 +7,11 @@ export default function Feedback({
 }) {
   return (
     <>
-      {total > 0 && <p className={css.text}> Good: {good}</p>}
-      {total > 0 && <p className={css.text}>Neutral: {neutral}</p>}
-      {total > 0 && <p className={css.text}>Bad: {bad}</p>}
-      {total > 0 && <p className={css.text}>Total: {total}</p>}
-      {total > 0 && <p className={css.text}>Positive: {positive}%</p>}
+      <p className={css.text}> Good: {good}</p>
+      <p className={css.text}>Neutral: {neutral}</p>
+      <p className={css.text}>Bad: {bad}</p>
+      <p className={css.text}>Total: {total}</p>
+      <p className={css.text}>Positive: {positive}%</p>
     </>
   );
 }

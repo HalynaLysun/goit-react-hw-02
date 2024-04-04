@@ -49,8 +49,10 @@ export default function App() {
         total={totalFeedback}
         onReset={onReset}
       />
-      <Feedback reviews={reviews} total={totalFeedback} positive={positive} />
-      <Notification total={totalFeedback} />
+      {totalFeedback > 0 && (
+        <Feedback reviews={reviews} total={totalFeedback} positive={positive} />
+      )}
+      {totalFeedback === 0 && <Notification total={totalFeedback} />}
     </>
   );
 }
